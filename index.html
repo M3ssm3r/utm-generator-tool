@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTM-генератор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Простой UTM-генератор</h1>
+        <p class="subtitle">Создан, чтобы не делать рутинную работу руками.</p>
+
+        <div class="form-group">
+            <label for="baseUrl">URL сайта*</label>
+            <input type="text" id="baseUrl" placeholder="https://example.com/page">
+        </div>
+
+        <div class="form-group">
+            <label for="utmSource">Источник кампании (utm_source)*</label>
+            <input type="text" id="utmSource" placeholder="google">
+        </div>
+
+        <div class="form-group">
+            <label for="utmMedium">Канал кампании (utm_medium)*</label>
+            <input type="text" id="utmMedium" placeholder="cpc">
+        </div>
+
+        <div class="form-group">
+            <label for="utmCampaign">Название кампании (utm_campaign)*</label>
+            <input type="text" id="utmCampaign" placeholder="promo_sale">
+        </div>
+        
+        <div class="form-group">
+            <label for="utmTerm">Ключевое слово (utm_term)</label>
+            <input type="text" id="utmTerm" placeholder="buy_elephant">
+        </div>
+
+        <div class="form-group">
+            <label for="utmContent">Содержание (utm_content)</label>
+            <input type="text" id="utmContent" placeholder="banner_blue">
+        </div>
+
+        <h2>Результат:</h2>
+        <div class="result-box">
+            <textarea id="resultUrl" readonly></textarea>
+            <button id="copyButton">Копировать</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
